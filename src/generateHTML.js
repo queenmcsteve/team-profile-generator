@@ -6,7 +6,7 @@ const generateManager = function (manager) {
     <h4>Manager<h4>
     </div>
     <div class="card-body">
-      <p class="card-text">ID:${manager.id}</p>
+      <p class="card-text">ID: ${manager.id}</p>
       <p class="card-text">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
       <p class="card-text">Office No: ${manager.officeNumber}</p>
     </div>
@@ -22,7 +22,7 @@ const generateEngineer = function (engineer) {
     <div class="card-body">
       <p class="card-text">ID: ${engineer.id}</p>
       <p class="card-text">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-      <p class="card-text">Github: <a href="https://github.com/${engineer.github}" target=_blank>${engineer.github}</a></p>
+      <p class="card-text">Github: <a target=_blank href="https://github.com/${engineer.github}">${engineer.github}</a></p>
     </div>
     </div>`;
 };
