@@ -6,6 +6,7 @@ const fs = require("fs");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const generateHTML = require("./src/generateHTML");
 
 let teamArray = [];
 
@@ -57,8 +58,18 @@ const addEmployee = () => {
       const { role } = employeeType;
       if (role === "Finish Building Team") {
         // return teamArray;
-        console.log("team built");
         console.log(teamArray);
+        console.log("team built");
+        fs.writeFile(
+          "./dist/index.html",
+          generateHTML(teamArray),
+          function (err) {
+            if (err) {
+              return console.log(err);
+            }
+            console.log("filed created");
+          }
+        );
       } else if (role === "Engineer") {
         console.log(`${role} entered`);
         return inquirer
