@@ -4,7 +4,7 @@
 
 ## Description:
 
-This is a command line program for generating HTML team profiles
+This is a command line program for generating HTML team profiles based on user input. It uses the Inquirer module from Node.js, and generates a HTML file styled with bootstrap.
 
 ## Table of contents:
 
@@ -18,11 +18,11 @@ This is a command line program for generating HTML team profiles
 
 # Installation Instructions
 
-run `npm i` to install dependencies
+Clone the repository from Github and download node. This application requires file system and inquierer modules of node, as well as jest if testing is required. Run `npm i` to install these dependencies.
 
 # Usage
 
-run `node index.js` to start the program, then follow the prompts.
+Run `node index.js` to start the program, then follow the prompts.
 
 # Contributing
 
@@ -30,13 +30,15 @@ You're welcome to clone and fork this repo.
 
 # Tests
 
-to run the tests run `npm run test`
+To run the tests, after installing dependencies run `npm run test`.
 
 # Screenshots
 
-As this is a command line program, there are no screenshots. Please watch the following demo video to see the program in action. An example team profile HTML file created with the program can be found in the dist folder.
+As this is a command line program, there are no screenshots of the program itself. Please watch the following demo video to see the program in action.
 
-[Demonstration Video](https://watch.screencastify.com/v/4C4WWdbCz0kG146IEwkr)
+[Demonstration Video](https://watch.screencastify.com/v/IJ3hZdypUyK9gowIetM9)
+
+An example team profile HTML file created with the program can be found in the dist folder. Below is an example of a generated profile.
 
 # Contact
 
